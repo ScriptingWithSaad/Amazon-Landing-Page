@@ -5,7 +5,7 @@
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  border: border-box;
+  box-sizing: border-box;
 }
 
 /* navbar */
@@ -35,8 +35,8 @@
   border: 1.5px solid transparent;
 }
 
-.border :hover {
-  border: 1.5px solid White;
+.border:hover {
+  border-color: white;
 }
 
 /* Box 2 */
@@ -63,8 +63,12 @@
   align-items: center;
 }
 
+.nav-address {
+  border: 1.5px solid transparent;
+}
+
 .nav-address:hover {
-  border: 1.5px solid White;
+  border-color: white;
 }
 
 /* Box 3 */
@@ -109,16 +113,20 @@
   color: #0f1111;
 }
 
-.nav-search:hover {
-  border: 2px solid orange;
+.nav-search {
+  border: 2px solid transparent;
   border-radius: 9px;
+}
+
+.nav-search:hover {
+  border-color: orange;
 }
 
 /* Box 4 */
 
 .nav-languages {
-  height: 20px;
-  width: 75px;
+  height: 43px;
+  width: 100px;
   display: flex;
   padding: 10px;
 }
@@ -137,14 +145,19 @@
   font-weight: 600;
 }
 
+.nav-languages {
+  border: 1.5px solid transparent;
+}
+
 .nav-languages:hover {
-  border: 1.5px solid white;
+  border-color: white;
 }
 
 /* Box 5 */
 
-.nav-signnin {
+.nav-signin {
   padding: 10px;
+  border: 1.5px solid transparent;
 }
 
 .nav-signin span {
@@ -157,14 +170,18 @@
 }
 
 .nav-signin:hover {
-  border: 1.5px solid white;
+  border-color: white;
 }
 
 /* Box 6 */
 
+.nav-return {
+  padding: 10px;
+  border: 1.5px solid transparent;
+}
+
 .nav-return span {
   font-size: 0.8rem;
-  padding: 10px;
 }
 
 .nav-sec-return {
@@ -173,23 +190,24 @@
 }
 
 .nav-return:hover {
-  border: 1.5px solid white;
+  border-color: white;
 }
 
 /* Box 7 */
+
+.nav-cart {
+  padding: 10px;
+  border: 1.5px solid transparent;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
 
 .nav-cart i {
   font-size: 1.6rem;
 }
 
-.nav-cart {
-  font-size: 0.85rem;
-  font-weight: 700;
-  padding: 10px;
-}
-
 .nav-cart:hover {
-  border: 1.5px solid white;
+  border-color: white;
 }
 
 /* now we make pannel bottom of the navbar */
@@ -205,31 +223,22 @@
 .pannel-sec {
   padding: 10px;
   font-weight: 700;
+  border: 1.3px solid transparent;
+}
+
+.pannel-sec:hover {
+  border-color: white;
 }
 
 .pannel-options a {
   text-decoration: none;
-}
-
-.pannel-option-one,
-.pannel-option-two,
-.pannel-option-three,
-.pannel-option-four,
-.pannel-option-five {
   font-size: 0.9rem;
   padding: 8px 9px;
+  border: 1.5px solid transparent;
 }
 
-.pannel-option-one:hover,
-.pannel-option-two:hover,
-.pannel-option-three:hover,
-.pannel-option-four:hover,
-.pannel-option-five:hover {
-  border: 1.5px solid white;
-}
-
-.pannel-sec:hover {
-  border: 1.3px solid white;
+.pannel-options a:hover {
+  border-color: white;
 }
 
 /* hero section */
